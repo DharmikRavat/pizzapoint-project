@@ -2,6 +2,7 @@ services:
   - type: web
     name: pizzapoint-backend
     env: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn run:app
     envVars:
@@ -47,3 +48,4 @@ databases:
   - name: pizzapoint-db
     databaseName: mahadev_pizza
     user: admin
+    plan: free
