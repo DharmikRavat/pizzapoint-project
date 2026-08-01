@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E63946;
+  --color-secondary: #FFB703;
+  --color-dark: #1F2937;
+  --color-light: #F8F9FA;
+  --color-success: #16A34A;
+  
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin-slow 35s linear infinite;
+  }
+  
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .pizza-loader {
+    animation: spin 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    display: inline-block;
+  }
+}

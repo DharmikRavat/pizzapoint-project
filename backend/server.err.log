@@ -1,0 +1,617 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.45.12.217:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\_py_processors.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bs4\\builder\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\connectors\\aioodbc.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\babel\\localtime\\_helpers.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\postgresql\\operators.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_babel\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\watchdog\\utils\\echo.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\_typing.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\oracle\\dictionary.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\mysql\\reflection.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\postgresql\\pg_catalog.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\mysql\\reserved_words.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\modes.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\binding.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\mssql\\information_schema.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\_cipheralgorithm.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\algorithms.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\urllib3\\contrib\\socks.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\ssh.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\idna\\intranges.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\urllib3\\http2\\probe.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\idna\\uts46data.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bcrypt\\__init__.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\ascii.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\big5.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\big5hkscs.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp037.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1006.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1026.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1125.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1140.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1250.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1251.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1253.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1254.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1255.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1256.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1257.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1258.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp273.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp424.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp500.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp720.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp737.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp775.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp850.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp852.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp855.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp856.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp857.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp858.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp860.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp861.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp862.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp863.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp864.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp865.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp866.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp869.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp874.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp875.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp932.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp949.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp950.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_jis_2004.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_jisx0213.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_jp.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_kr.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\gb18030.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\gb2312.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\gbk.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\hp_roman8.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\hz.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_1.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_2.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_2004.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_3.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_ext.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_kr.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_10.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_11.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_13.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_14.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_15.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_16.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_2.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_3.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_4.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_5.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_6.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_7.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_8.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_9.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\johab.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\koi8_r.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\koi8_t.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\koi8_u.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\kz1048.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\latin_1.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_cyrillic.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_greek.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_iceland.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_latin2.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_roman.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_turkish.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\ptcp154.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\shift_jis.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\shift_jis_2004.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\shift_jisx0213.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\tis_620.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\requests\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\util\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\x509\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_login\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\chardet\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\chardet\\pipeline\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\bindings\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\mssql\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\pool\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\mysql\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\charset_normalizer\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\postgresql\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\ext\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\ext\\asyncio\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\click\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\event\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\oracle\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\backends\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\backends\\openssl\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\dialects\\sqlite\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\connectors\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\colorama\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\deep_translator\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bs4\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bs4\\builder\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\greenlet\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\urllib3\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\urllib3\\util\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\backports\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\soupsieve\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\babel\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\future\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\watchdog\\utils\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\babel\\localtime\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\watchdog\\observers\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_babel\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\routing\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\watchdog\\tricks\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\jinja2\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\markupsafe\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\ext\\compiler.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pytz\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\itsdangerous\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\idna\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\blinker\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\json\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\certifi\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\lxml\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\_conditional.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\chardet\\models\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\reportlab\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\reportlab\\pdfbase\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\reportlab\\lib\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\decrepit\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bcrypt\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\algorithms.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\urllib3\\http2\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bcrypt\\__about__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\reportlab\\pdfgen\\__init__.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\ascii.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\big5.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\big5hkscs.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp037.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1006.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1026.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1125.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1140.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1250.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1251.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1253.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1254.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1255.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1256.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1257.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp1258.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp273.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp424.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp500.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp720.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp737.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp775.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp850.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp852.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp855.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp856.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp857.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp858.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp860.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp861.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp862.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp863.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp864.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp865.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp866.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp869.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp874.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp875.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp932.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp949.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\cp950.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_jis_2004.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_jisx0213.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_jp.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\euc_kr.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\gb18030.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\gb2312.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\gbk.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\hp_roman8.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\hz.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_1.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_2.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_2004.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_3.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_jp_ext.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso2022_kr.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_10.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_11.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_13.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_14.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_15.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_16.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_2.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_3.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_4.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_5.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_6.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_7.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_8.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\iso8859_9.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\johab.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\koi8_r.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\koi8_t.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\koi8_u.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\kz1048.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\latin_1.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_cyrillic.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_greek.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_iceland.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_latin2.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_roman.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\mac_turkish.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\ptcp154.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\shift_jis.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\shift_jis_2004.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\shift_jisx0213.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\encodings\\tis_620.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\netrc.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\app.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\scoping.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\session.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\state_changes.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\default.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\seed_user.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\__init__.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\extensions.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\config.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\routes\\__init__.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\controllers\\order_controller.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\seed.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\controllers\\product_controller.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\controllers\\category_controller.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\controllers\\admin_controller.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\controllers\\auth_controller.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\app\\models.py', reloading
+ * Detected change in 'D:\\project\\pizzapoint-main\\backend\\seed_db.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\extension.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\jwt_manager.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_cors\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_bcrypt.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\model.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\ctx.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\schema.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\schema.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\table.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\decl_api.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\create.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\globals.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\helpers.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\pagination.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\exc.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\relationships.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\_orm_constructors.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\tokens.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\jwt\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\jwt\\api_jwt.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\jwt\\api_jws.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\sansio\\app.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\sessions.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\debughelpers.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\serving.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\click\\termui.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\testing.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\signals.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\exceptions.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\routing\\rules.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\sansio\\scaffold.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\config.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\utils.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\logging.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\templating.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\jinja2\\loaders.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\elements.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\util\\typing.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\selectable.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\_typing.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\type_api.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\util\\langhelpers.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\functions.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\coercions.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\inspection.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\util\\deprecations.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\cache_key.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\traversals.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\interfaces.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\cursor.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\event\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\visitors.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\event\\registry.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\event\\attr.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\query.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\query.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\annotation.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\_typing.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\mapper.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\state.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\expression.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\context.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\util.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\result.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\row.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\log.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\main.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\ipython.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\parser.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\variables.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\json\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask\\wrappers.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\mongo_client.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\utils.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\certifi\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\view_decorators.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\certifi\\core.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bcrypt\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\session.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\test.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\errors.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\urls.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\wsgi.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\uri_parser.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\util.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\_internal.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\client_options.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\lock.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\local.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\settings.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\encryption.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\sansio\\request.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\track_modifications.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\topology.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\blinker\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\formparser.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\blinker\\base.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\change_stream.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\event\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\event\\api.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\sansio\\utils.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\orm\\unitofwork.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\sansio\\http.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\client_session.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\command_cursor.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\internal_utils.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\exceptions.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_jwt_extended\\typing.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\flask_sqlalchemy\\cli.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\codec_options.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\markupsafe\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\logger.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\security.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\typings.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\errors.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\typings.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\common.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\write_concern.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\read_preferences.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\lambdas.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\server_selectors.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\util.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\engine\\_py_row.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\read_concern.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\database.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\collection.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\aggregation.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\operations.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\collation.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\bulk.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\results.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\helpers.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\objectid.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\cursor.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\raw_bson.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\binary.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\bson\\int64.py', reloading
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\pymongo\\_csot.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\tomllib\\__init__.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\tomllib\\_parser.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\tomllib\\_re.py', reloading
+ * Detected change in 'C:\\Program Files\\Python311\\Lib\\tomllib\\_types.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 541-129-483
+127.0.0.1 - - [31/Jul/2026 20:08:44] "POST /api/v1/auth/login HTTP/1.1" 500 -
+127.0.0.1 - - [31/Jul/2026 20:10:26] "GET /login HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:27] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:27] "GET /login HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:28] "GET /login HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:29] "GET /login HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:29] "GET /login HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:29] "GET /login HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Jul/2026 20:10:43] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:44] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:44] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:44] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:44] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:44] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:55] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:55] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:55] "GET /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:55] "GET /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:57] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:58] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:59] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:59] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:59] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:10:59] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:01] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:01] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:01] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:01] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:07] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:07] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:07] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:11:07] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:32] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:33] "POST /api/v1/products/ HTTP/1.1" 201 -
+127.0.0.1 - - [31/Jul/2026 20:12:33] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:33] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:43] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:43] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:43] "GET /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:12:43] "GET /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:11] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:12] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:14] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:15] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:15] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:22] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:22] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:29] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:29] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:29] "OPTIONS /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:29] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:29] "OPTIONS /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:29] "GET /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:30] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:30] "GET /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "OPTIONS /api/v1/categories/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "OPTIONS /api/v1/categories/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "GET /api/v1/categories/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "GET /api/v1/categories/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:34] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:35] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:42] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:42] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:47] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:48] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:53] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:53] "POST /api/v1/orders/ HTTP/1.1" 201 -
+127.0.0.1 - - [31/Jul/2026 20:23:55] "OPTIONS /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:56] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:56] "OPTIONS /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:56] "GET /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:56] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:23:56] "GET /api/v1/orders/me HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:06] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:06] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:06] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:06] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:06] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:06] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:16] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:16] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:16] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:16] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:19] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:19] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:20] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:20] "OPTIONS /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:20] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:20] "GET /api/v1/products/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:23] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:23] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:23] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:23] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:25] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:26] "GET /api/v1/categories/?all=true HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:28] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:28] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:30] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:31] "OPTIONS /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:31] "GET /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:31] "GET /api/v1/orders/ HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:46] "OPTIONS /api/v1/orders/5/status HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:24:47] "PUT /api/v1/orders/5/status HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:26:03] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:26:03] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:26:03] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 20:26:03] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Ronak\\AppData\\Roaming\\Python\\Python311\\site-packages\\sqlalchemy\\sql\\_elements_constructors.py', reloading

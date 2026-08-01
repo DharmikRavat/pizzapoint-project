@@ -1,0 +1,797 @@
+Act as a Senior Full-Stack Developer with 10+ years of professional experience.
+
+Build a complete production-quality web application for:
+
+PROJECT NAME:
+Mahadev Pizza Point
+
+PURPOSE:
+Online Pizza Ordering + Restaurant Management System
+
+TECHNOLOGY:
+Frontend:
+- React.js + Vite
+- JavaScript
+- Tailwind CSS
+- React Router
+- Axios
+- React Icons
+- Framer Motion
+
+Backend:
+- Python
+- Flask
+- REST API
+
+Database:
+- MongoDB Atlas
+- PyMongo
+
+Authentication:
+- JWT
+- Role-based authentication
+
+ROLES:
+1. Customer/User
+2. Admin
+
+IMPORTANT:
+The frontend, Flask backend, and MongoDB database must be properly connected.
+Do not create fake/static data for the main functionality.
+All products, categories, users, carts, orders, reviews, offers, and dashboard data must come from MongoDB through Flask APIs.
+
+==================================================
+USER SIDE
+==================================================
+
+Create a complete customer-facing pizza ordering website.
+
+1. HOME PAGE
+
+Create:
+
+- Header/Navbar
+- Mahadev Pizza Point logo
+- Home
+- Menu
+- Offers
+- About
+- Contact
+- Search
+- Login/Register
+- Cart icon
+- User profile
+
+Hero section:
+
+- Attractive pizza image
+- "Fresh Pizza, Made With Love"
+- "Order Now" button
+- "Explore Menu" button
+- Delivery information
+- Special offer badge
+
+Categories:
+
+- Veg Pizza
+- Non-Veg Pizza
+- Cheese Burst
+- Combos
+- Garlic Bread
+- Pasta
+- Burger
+- Beverages
+- Desserts
+
+Featured Products:
+
+Show products dynamically from MongoDB.
+
+Product card must contain:
+
+- Product image
+- Product name
+- Description
+- Category
+- Price
+- Discount price
+- Rating
+- Veg/Non-Veg indicator
+- Available/Unavailable status
+- Add to Cart
+- Wishlist
+- View Details
+
+==================================================
+2. MENU PAGE
+==================================================
+
+Display all products from MongoDB.
+
+Features:
+
+- Search
+- Category filter
+- Price filter
+- Veg/Non-Veg filter
+- Rating filter
+- Sorting
+- Pagination
+
+Product Details page:
+
+- Large product image
+- Product gallery
+- Product name
+- Description
+- Ingredients
+- Price
+- Discount
+- Rating
+- Reviews
+- Quantity selector
+- Add to Cart
+- Buy Now
+- Add to Wishlist
+
+==================================================
+3. CART
+==================================================
+
+Cart should work with MongoDB.
+
+Features:
+
+- Product image
+- Product name
+- Price
+- Quantity +/-
+- Remove
+- Clear Cart
+- Coupon
+- Subtotal
+- Tax
+- Delivery Charge
+- Discount
+- Grand Total
+- Checkout
+
+Cart must update automatically when quantity changes.
+
+==================================================
+4. CHECKOUT
+==================================================
+
+Create:
+
+- Customer information
+- Delivery address
+- Phone number
+- Order summary
+- Coupon
+- Delivery charge
+- Tax
+- Total amount
+
+Payment methods:
+
+- Cash on Delivery
+- Online Payment - keep architecture ready for future integration
+
+Place Order button.
+
+After placing the order:
+
+Show:
+
+"Order Successfully Placed"
+
+Generate:
+
+- Order Number
+- Order Summary
+- Total
+- Estimated Delivery Time
+
+==================================================
+5. USER AUTHENTICATION
+==================================================
+
+Create:
+
+Register
+
+Fields:
+- Full Name
+- Email
+- Phone
+- Password
+- Confirm Password
+
+Login:
+- Email
+- Password
+- Remember Me
+- Forgot Password
+
+Also create:
+
+- Logout
+- Change Password
+- Forgot Password
+- Reset Password
+- JWT authentication
+
+==================================================
+6. USER PROFILE
+==================================================
+
+Create customer dashboard.
+
+Sections:
+
+Profile
+Orders
+Wishlist
+Addresses
+Notifications
+Settings
+Logout
+
+Profile:
+
+- Profile image
+- Name
+- Email
+- Phone
+- Edit Profile
+
+==================================================
+7. MY ORDERS
+==================================================
+
+Display user's orders from MongoDB.
+
+Show:
+
+- Order Number
+- Date
+- Products
+- Total
+- Payment Status
+- Order Status
+
+Order status:
+
+Pending
+Confirmed
+Preparing
+Ready
+Out for Delivery
+Delivered
+Cancelled
+
+Create an order tracking timeline.
+
+==================================================
+8. WISHLIST
+==================================================
+
+Features:
+
+- Add product
+- Remove product
+- Move to Cart
+- Product details
+
+==================================================
+9. REVIEWS
+==================================================
+
+User can review purchased products.
+
+Fields:
+
+- Rating 1-5
+- Review
+- Optional image
+
+Display:
+
+- Average Rating
+- Total Reviews
+- Customer Reviews
+
+==================================================
+10. OFFERS PAGE
+==================================================
+
+Display offers dynamically from MongoDB.
+
+Examples:
+
+- Buy 1 Get 1
+- 20% OFF
+- Weekend Special
+- Family Combo
+
+==================================================
+11. CONTACT PAGE
+==================================================
+
+Create:
+
+- Name
+- Email
+- Phone
+- Message
+
+Save contact messages in MongoDB.
+
+==================================================
+ADMIN SIDE
+==================================================
+
+Create a completely separate protected admin dashboard.
+
+Admin route:
+
+/admin
+
+Only authenticated admin users can access admin pages.
+
+Normal customers must not be able to access admin routes.
+
+==================================================
+ADMIN DASHBOARD
+==================================================
+
+Create a professional dashboard.
+
+Show cards:
+
+- Total Products
+- Total Customers
+- Total Orders
+- Today's Orders
+- Total Revenue
+- Today's Revenue
+- Pending Orders
+
+Charts:
+
+- Daily Sales
+- Monthly Revenue
+- Orders Overview
+- Top Selling Products
+- Category-wise Sales
+
+All statistics must come from MongoDB using backend APIs.
+
+Do not use hardcoded chart values.
+
+==================================================
+ADMIN PRODUCT MANAGEMENT
+==================================================
+
+Create complete CRUD functionality.
+
+Create Product
+
+Fields:
+
+- Product Name
+- Category
+- Description
+- Ingredients
+- Price
+- Discount Price
+- Product Image
+- Gallery Images
+- Veg/Non-Veg
+- Stock
+- Preparation Time
+- Available/Unavailable
+
+Actions:
+
+- Add
+- View
+- Edit
+- Delete
+- Search
+- Filter
+- Sort
+- Pagination
+
+Delete must show confirmation.
+
+==================================================
+ADMIN CATEGORY MANAGEMENT
+==================================================
+
+CRUD:
+
+Create
+Read
+Update
+Delete
+
+Fields:
+
+- Category Name
+- Description
+- Image
+- Status
+
+==================================================
+ADMIN ORDER MANAGEMENT
+==================================================
+
+Display all orders.
+
+Columns:
+
+- Order ID
+- Customer
+- Date
+- Items
+- Amount
+- Payment Status
+- Order Status
+- Actions
+
+Admin can update:
+
+Pending
+Confirmed
+Preparing
+Ready
+Out for Delivery
+Delivered
+Cancelled
+
+==================================================
+ADMIN CUSTOMER MANAGEMENT
+==================================================
+
+Display:
+
+- Customer Name
+- Email
+- Phone
+- Registration Date
+- Total Orders
+- Total Spending
+- Status
+
+Actions:
+
+- View
+- Block
+- Unblock
+- Delete
+
+==================================================
+ADMIN COUPON MANAGEMENT
+==================================================
+
+CRUD:
+
+Create Coupon
+Edit Coupon
+Delete Coupon
+Activate/Deactivate
+
+Fields:
+
+- Coupon Code
+- Discount Type
+- Discount Value
+- Minimum Order
+- Maximum Discount
+- Start Date
+- Expiry Date
+- Usage Limit
+- Status
+
+==================================================
+ADMIN OFFER MANAGEMENT
+==================================================
+
+Admin can:
+
+- Create Offer
+- Edit Offer
+- Delete Offer
+- Activate/Deactivate Offer
+
+Fields:
+
+- Offer Title
+- Description
+- Image
+- Discount
+- Start Date
+- End Date
+- Status
+
+==================================================
+ADMIN REVIEW MANAGEMENT
+==================================================
+
+Admin can:
+
+- View Reviews
+- Approve Reviews
+- Delete Reviews
+- Filter Reviews
+- View Ratings
+
+==================================================
+ADMIN BANNER MANAGEMENT
+==================================================
+
+Admin can manage homepage banners.
+
+CRUD:
+
+- Add Banner
+- Edit Banner
+- Delete Banner
+- Activate/Deactivate Banner
+
+==================================================
+ADMIN RESTAURANT SETTINGS
+==================================================
+
+Admin can update:
+
+- Restaurant Name
+- Logo
+- Phone
+- Email
+- Address
+- Opening Hours
+- Closing Hours
+- Delivery Charge
+- Tax/GST
+- Social Media Links
+
+==================================================
+ADMIN PROFILE
+==================================================
+
+Admin can:
+
+- View Profile
+- Edit Profile
+- Change Password
+- Logout
+
+==================================================
+MONGODB COLLECTIONS
+==================================================
+
+Create and use:
+
+users
+admins
+categories
+products
+cart
+orders
+order_items
+payments
+reviews
+wishlist
+coupons
+offers
+notifications
+banners
+restaurant_settings
+contact_messages
+
+==================================================
+API STRUCTURE
+==================================================
+
+Create REST APIs such as:
+
+Authentication:
+
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/forgot-password
+POST /api/auth/reset-password
+
+Products:
+
+GET /api/products
+GET /api/products/:id
+POST /api/products
+PUT /api/products/:id
+DELETE /api/products/:id
+
+Categories:
+
+GET /api/categories
+POST /api/categories
+PUT /api/categories/:id
+DELETE /api/categories/:id
+
+Cart:
+
+GET /api/cart
+POST /api/cart
+PUT /api/cart/:id
+DELETE /api/cart/:id
+
+Orders:
+
+POST /api/orders
+GET /api/orders
+GET /api/orders/:id
+PUT /api/orders/:id/status
+DELETE /api/orders/:id
+
+Users:
+
+GET /api/users
+GET /api/users/:id
+PUT /api/users/:id
+DELETE /api/users/:id
+
+Reviews:
+
+GET /api/reviews
+POST /api/reviews
+PUT /api/reviews/:id
+DELETE /api/reviews/:id
+
+Admin Dashboard:
+
+GET /api/admin/dashboard
+GET /api/admin/analytics
+GET /api/admin/revenue
+GET /api/admin/top-products
+
+==================================================
+SECURITY
+==================================================
+
+Implement:
+
+- JWT authentication
+- Password hashing
+- Protected routes
+- Admin authorization
+- User authorization
+- Input validation
+- CORS
+- Error handling
+- Secure API responses
+- Environment variables
+- No passwords returned in API responses
+
+==================================================
+UI/UX
+==================================================
+
+Create a professional restaurant design.
+
+Style:
+
+- Modern
+- Clean
+- Premium
+- Fast
+- Responsive
+- Professional
+
+Colors:
+
+Primary: Red
+Secondary: Yellow/Gold
+Background: White/Light Gray
+Text: Dark
+
+Use:
+
+- Cards
+- Rounded corners
+- Soft shadows
+- Smooth hover effects
+- Loading skeletons
+- Toast notifications
+- Empty states
+- Confirmation dialogs
+
+Fully responsive for:
+
+Mobile
+Tablet
+Laptop
+Desktop
+
+==================================================
+IMPORTANT DEVELOPMENT RULES
+==================================================
+
+1. Do not use fake data for core functionality.
+
+2. Connect frontend to Flask APIs using Axios.
+
+3. Connect Flask to MongoDB Atlas using PyMongo.
+
+4. Use environment variables for MongoDB credentials.
+
+5. Keep Admin and User functionality separate.
+
+6. Use reusable React components.
+
+7. Use protected routes.
+
+8. Use role-based authorization.
+
+9. Implement complete CRUD operations.
+
+10. Use proper error handling.
+
+11. Use loading states.
+
+12. Use empty states.
+
+13. Use pagination.
+
+14. Use search and filtering.
+
+15. Use clean folder structure.
+
+16. Do not delete existing working functionality if this prompt is being applied to an existing project.
+
+17. If something already exists, improve and integrate it instead of duplicating it.
+
+18. Keep frontend, backend, and database properly synchronized.
+
+19. All dashboard analytics must be calculated from MongoDB data.
+
+20. The final application must be runnable locally.
+
+==================================================
+FINAL OUTPUT
+==================================================
+
+Generate the complete working:
+
+USER SIDE
++
+ADMIN SIDE
++
+FLASK BACKEND
++
+MONGODB DATABASE
+
+with:
+
+- Complete folder structure
+- React components
+- Flask APIs
+- MongoDB collections
+- CRUD operations
+- Authentication
+- Authorization
+- Admin dashboard
+- User dashboard
+- Product management
+- Category management
+- Order management
+- Cart
+- Wishlist
+- Reviews
+- Coupons
+- Offers
+- Analytics
+
+The final result should look and behave like a real-world restaurant ordering and management system, not a basic college demo.

@@ -1,0 +1,515 @@
+Act as a Senior Backend Engineer with over 10 years of experience in designing secure, scalable, production-ready REST APIs and backend architectures.
+
+Your task is to build the complete backend for a restaurant web application named "Mahadev Pizza Point".
+
+The backend should follow clean architecture, SOLID principles, RESTful API standards, and production-level coding practices.
+
+==================================================
+TECH STACK
+==================================================
+
+Backend:
+- Python 3.12+
+- Flask
+- Flask Blueprint Architecture
+- Flask-JWT-Extended
+- Flask-CORS
+- Flask-Bcrypt
+- Flask-Mail
+- Flask-Limiter
+- Flask-Caching
+
+Database:
+- MongoDB
+- PyMongo
+
+Authentication:
+- JWT Access Token
+- JWT Refresh Token
+- Role-Based Authentication
+- Secure Password Hashing
+- Email Verification
+- Forgot Password
+- OTP Verification
+
+Validation:
+- Marshmallow or Pydantic
+- Input Validation
+- Custom Error Handling
+
+Logging:
+- Python Logging
+- Error Logs
+- Request Logs
+
+Deployment Ready:
+- Environment Variables (.env)
+- Gunicorn
+- Docker Ready
+- Production Configuration
+
+==================================================
+PROJECT STRUCTURE
+==================================================
+
+backend/
+│
+├── app/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── extensions.py
+│   ├── middleware/
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── repositories/
+│   ├── models/
+│   ├── validators/
+│   ├── schemas/
+│   ├── utils/
+│   ├── helpers/
+│   ├── auth/
+│   ├── uploads/
+│   ├── static/
+│   └── templates/
+│
+├── requirements.txt
+├── run.py
+├── .env
+└── README.md
+
+==================================================
+DATABASE COLLECTIONS
+==================================================
+
+Users
+Categories
+Products
+Orders
+OrderItems
+Coupons
+Offers
+Customers
+Addresses
+Reviews
+Wishlist
+Cart
+Payments
+Notifications
+RestaurantSettings
+DeliveryCharges
+Banners
+Analytics
+
+==================================================
+AUTHENTICATION MODULE
+==================================================
+
+User Registration
+User Login
+Logout
+Refresh Token
+Forgot Password
+Reset Password
+OTP Verification
+Email Verification
+Change Password
+Update Profile
+Delete Account
+
+Role Based Access
+
+Admin
+Manager
+Customer
+
+==================================================
+PRODUCT MODULE
+==================================================
+
+CRUD Operations
+
+Create Product
+
+Read Products
+
+Single Product
+
+Update Product
+
+Delete Product
+
+Search Products
+
+Pagination
+
+Sorting
+
+Category Filter
+
+Price Filter
+
+Availability Filter
+
+Image Upload
+
+Featured Products
+
+Best Sellers
+
+Latest Products
+
+==================================================
+CATEGORY MODULE
+==================================================
+
+Create Category
+
+Update Category
+
+Delete Category
+
+List Categories
+
+Category Image Upload
+
+==================================================
+ORDER MODULE
+==================================================
+
+Create Order
+
+Cancel Order
+
+Track Order
+
+Update Status
+
+Pending
+
+Confirmed
+
+Preparing
+
+Ready
+
+Out For Delivery
+
+Delivered
+
+Cancelled
+
+Generate Invoice
+
+==================================================
+CART MODULE
+==================================================
+
+Add to Cart
+
+Update Quantity
+
+Remove Product
+
+Clear Cart
+
+Calculate Total
+
+Calculate Tax
+
+Delivery Charge
+
+Coupon Discount
+
+==================================================
+PAYMENT MODULE
+==================================================
+
+Cash on Delivery
+
+Payment Status
+
+Order Confirmation
+
+Invoice Generation
+
+==================================================
+CUSTOMER MODULE
+==================================================
+
+Customer Profile
+
+Address Management
+
+Wishlist
+
+Order History
+
+Saved Cards (Future Ready)
+
+==================================================
+ADMIN DASHBOARD
+==================================================
+
+Dashboard APIs
+
+Total Orders
+
+Total Revenue
+
+Today's Orders
+
+Today's Revenue
+
+Customers Count
+
+Products Count
+
+Pending Orders
+
+Monthly Sales
+
+Top Selling Pizza
+
+Revenue Analytics
+
+Category Analytics
+
+Recent Orders
+
+==================================================
+COUPON MODULE
+==================================================
+
+Create Coupon
+
+Apply Coupon
+
+Coupon Validation
+
+Coupon Expiry
+
+Discount Calculation
+
+==================================================
+OFFERS MODULE
+==================================================
+
+CRUD
+
+Activate Offer
+
+Deactivate Offer
+
+Schedule Offer
+
+==================================================
+REVIEW MODULE
+==================================================
+
+Add Review
+
+Update Review
+
+Delete Review
+
+Ratings
+
+Average Rating
+
+==================================================
+NOTIFICATION MODULE
+==================================================
+
+Order Notifications
+
+Email Notifications
+
+System Notifications
+
+==================================================
+RESTAURANT SETTINGS
+==================================================
+
+Restaurant Information
+
+Opening Hours
+
+Delivery Charges
+
+GST Percentage
+
+Contact Details
+
+Social Links
+
+Logo
+
+Banner
+
+==================================================
+API FEATURES
+==================================================
+
+RESTful APIs
+
+JSON Responses
+
+Standard HTTP Status Codes
+
+Pagination
+
+Filtering
+
+Sorting
+
+Search
+
+Validation
+
+Rate Limiting
+
+Authentication
+
+Authorization
+
+Global Exception Handling
+
+==================================================
+SECURITY
+==================================================
+
+Password Hashing
+
+JWT Authentication
+
+Refresh Tokens
+
+CORS Protection
+
+Input Validation
+
+Rate Limiting
+
+Environment Variables
+
+Secure File Upload
+
+Protected Admin Routes
+
+Prevent NoSQL Injection
+
+==================================================
+FILE UPLOADS
+==================================================
+
+Product Images
+
+Category Images
+
+Profile Photos
+
+Banner Images
+
+Supported Formats
+
+jpg
+jpeg
+png
+webp
+
+==================================================
+API DOCUMENTATION
+==================================================
+
+Swagger/OpenAPI
+
+Complete Endpoint Documentation
+
+Request Examples
+
+Response Examples
+
+Error Responses
+
+==================================================
+PERFORMANCE
+==================================================
+
+Reusable Services
+
+Repository Pattern
+
+Caching
+
+Database Indexing
+
+Optimized MongoDB Queries
+
+Pagination
+
+Lazy Loading
+
+==================================================
+CODE QUALITY
+==================================================
+
+Clean Architecture
+
+Reusable Functions
+
+Type Hints
+
+Docstrings
+
+Meaningful Variable Names
+
+No Duplicate Code
+
+Modular Structure
+
+Production Ready
+
+==================================================
+OUTPUT REQUIREMENTS
+==================================================
+
+Generate:
+
+1. Complete Folder Structure
+
+2. All Flask Files
+
+3. MongoDB Models
+
+4. Controllers
+
+5. Services
+
+6. Repositories
+
+7. Authentication
+
+8. JWT Setup
+
+9. Middleware
+
+10. CRUD APIs
+
+11. Validation
+
+12. Error Handling
+
+13. API Documentation
+
+14. requirements.txt
+
+15. .env.example
+
+16. README.md
+
+17. Postman Collection
+
+18. Sample MongoDB Data
+
+Write clean, maintainable, scalable backend code exactly as an experienced Senior Backend Engineer would build for a real-world restaurant management and online pizza ordering system.

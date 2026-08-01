@@ -1,0 +1,319 @@
+Act as a Senior Frontend Engineer with over 10 years of experience in building modern, scalable, production-ready restaurant websites.
+
+Your task is to design and develop a premium frontend for a pizza restaurant called "Mahadev Pizza Point".
+
+The design should feel modern, clean, premium, responsive, and optimized for performance. Avoid template-looking designs. Every section should have proper spacing, typography, hierarchy, and animations.
+
+Tech Stack:
+- React.js (Vite)
+- JavaScript (ES6+)
+- Tailwind CSS
+- React Router
+- Axios
+- Framer Motion
+- React Icons
+- Swiper.js
+- Chart.js (Admin Dashboard)
+- Responsive Mobile First Design
+
+Design Style:
+- Premium Restaurant
+- Modern UI
+- Glassmorphism (light usage)
+- Soft Shadows
+- Rounded Corners
+- Smooth Animations
+- Beautiful Hover Effects
+- Professional Typography
+- Fully Responsive
+
+Primary Colors:
+Primary: #E63946
+Secondary: #FFB703
+Dark: #1F2937
+Light: #F8F9FA
+Success: #16A34A
+
+Typography:
+- Headings: Poppins Bold
+- Body: Inter
+
+Website Structure
+
+1. Sticky Navigation
+- Logo
+- Home
+- Menu
+- Offers
+- About
+- Contact
+- Search
+- Cart Icon
+- Login Button
+- Register Button
+- Mobile Hamburger Menu
+
+2. Hero Section
+- Large pizza background
+- Big heading
+- Small subtitle
+- "Order Now" CTA
+- "Explore Menu" CTA
+- Pizza image floating animation
+- Delivery badge
+- Rating badge
+- Discount badge
+
+3. Categories
+Cards:
+- Veg Pizza
+- Non-Veg Pizza
+- Cheese Burst
+- Combo
+- Garlic Bread
+- Burger
+- Pasta
+- Drinks
+- Dessert
+
+Each category card should have:
+- Icon/Image
+- Hover Animation
+- Shadow
+- Gradient Border
+
+4. Featured Pizza
+Product Cards:
+- Pizza Image
+- Name
+- Description
+- Rating
+- Price
+- Discount
+- Veg/Non-Veg Badge
+- Add to Cart
+- Favorite Button
+- Quick View
+
+5. Best Seller Section
+Horizontal Slider
+Beautiful Product Cards
+Auto Scroll
+
+6. Offers Section
+Large promotional banners
+
+Example:
+Buy 1 Get 1
+Flat 30% Off
+Weekend Special
+
+7. Why Choose Us
+Cards:
+Fresh Ingredients
+Fast Delivery
+Best Quality
+Affordable Price
+24/7 Support
+
+Animated Icons
+
+8. Customer Reviews
+Swiper Slider
+
+Review Card:
+Customer Image
+Name
+5-Star Rating
+Review
+Location
+
+9. Statistics Section
+Animated Counter
+- Happy Customers
+- Orders Delivered
+- Pizza Varieties
+- Years Experience
+
+10. Gallery
+Beautiful Masonry Grid
+Hover Zoom
+Lightbox Preview
+
+11. Contact Section
+Contact Form
+Google Map
+Address
+Phone
+Email
+Working Hours
+
+12. Footer
+Logo
+Quick Links
+Menu Links
+Social Icons
+Newsletter
+Copyright
+
+----------------------------
+
+Authentication UI
+
+Modern Login Page
+Modern Register Page
+Forgot Password
+OTP Verification
+Remember Me
+Show Password
+
+----------------------------
+
+Customer Dashboard
+
+Profile
+My Orders
+Wishlist
+Addresses
+Notifications
+Settings
+Logout
+
+----------------------------
+
+Cart Page
+
+Quantity Increase
+Quantity Decrease
+Coupon Code
+Subtotal
+Tax
+Delivery Charge
+Grand Total
+Checkout Button
+
+----------------------------
+
+Checkout
+
+Shipping Address
+Payment Method
+
+Cash on Delivery
+
+Order Summary
+
+Success Page
+
+----------------------------
+
+Admin Dashboard
+
+Professional Sidebar
+
+Dashboard
+Products
+Categories
+Orders
+Customers
+Reviews
+Offers
+Coupons
+Analytics
+Settings
+Logout
+
+Dashboard Widgets
+
+Today's Orders
+Revenue
+Customers
+Products
+
+Charts
+
+Sales Chart
+Revenue Chart
+Top Selling Pizza
+Monthly Orders
+
+----------------------------
+
+Products Module
+
+CRUD
+
+Add Product
+Edit Product
+Delete Product
+Search
+Pagination
+Filter
+
+----------------------------
+
+Category Module
+
+CRUD
+
+----------------------------
+
+Orders Module
+
+Pending
+Preparing
+Out For Delivery
+Delivered
+Cancelled
+
+Status Update
+
+----------------------------
+
+Customer Module
+
+Search
+View Details
+Delete
+Block
+Order History
+
+----------------------------
+
+Settings
+
+Restaurant Info
+Opening Hours
+Delivery Charges
+Tax
+Banner Management
+Profile
+
+----------------------------
+
+Frontend Requirements
+
+✔ Mobile First
+✔ Tablet Responsive
+✔ Desktop Responsive
+✔ Lazy Loading Images
+✔ Skeleton Loaders
+✔ Error Pages
+✔ Loading Spinners
+✔ Empty States
+✔ Toast Notifications
+✔ SEO Friendly
+✔ Reusable Components
+✔ Clean Folder Structure
+✔ Production Ready Code
+✔ Proper Naming Convention
+✔ Accessibility (WCAG)
+✔ Smooth Animations
+✔ Optimized Performance
+✔ Dark Mode Support
+✔ Modern UX
+✔ Pixel Perfect UI
+✔ No Placeholder Design
+✔ Professional Quality Like Zomato, Domino's, or Pizza Hut
+
+Generate the entire frontend with reusable React components, clean architecture, responsive layouts, and production-ready code following industry best practices.

@@ -1,0 +1,294 @@
+
+Act as a Senior Database Architect with over 10 years of experience in designing scalable, secure, and production-ready MongoDB databases for restaurant and e-commerce applications.
+
+Your task is to design the complete MongoDB database for a restaurant web application named "Mahadev Pizza Point".
+
+The database should follow MongoDB best practices, use proper collections, references where appropriate, indexing strategies, and validation rules. Design it for high performance, maintainability, and scalability.
+
+==================================================
+TECHNOLOGY
+==================================================
+
+Database:
+- MongoDB Community Edition
+- MongoDB Compass
+- PyMongo
+- Flask Backend
+
+Database Name:
+mahadev_pizza_point
+
+==================================================
+CREATE THE FOLLOWING COLLECTIONS
+==================================================
+
+1. users
+2. admins
+3. categories
+4. products
+5. product_images
+6. carts
+7. cart_items
+8. orders
+9. order_items
+10. payments
+11. customers
+12. customer_addresses
+13. coupons
+14. offers
+15. reviews
+16. wishlist
+17. notifications
+18. banners
+19. restaurant_settings
+20. delivery_charges
+21. analytics
+22. contact_messages
+
+==================================================
+FOR EVERY COLLECTION PROVIDE
+==================================================
+
+✔ Collection Name
+
+✔ Purpose
+
+✔ Complete Schema
+
+✔ Field Name
+
+✔ Data Type
+
+✔ Required/Optional
+
+✔ Default Value
+
+✔ Validation Rules
+
+✔ Sample Document
+
+✔ Relationships
+
+✔ Recommended Indexes
+
+==================================================
+USERS COLLECTION
+==================================================
+
+Fields
+
+_id
+fullName
+email
+phone
+password
+role
+profileImage
+isVerified
+isBlocked
+createdAt
+updatedAt
+lastLogin
+
+==================================================
+PRODUCTS COLLECTION
+==================================================
+
+Fields
+
+_id
+categoryId
+productName
+slug
+description
+ingredients
+price
+discountPrice
+image
+galleryImages
+isVeg
+isAvailable
+rating
+reviewCount
+stock
+preparationTime
+size
+createdAt
+updatedAt
+
+==================================================
+CATEGORY COLLECTION
+==================================================
+
+_id
+categoryName
+slug
+image
+description
+status
+createdAt
+
+==================================================
+ORDERS COLLECTION
+==================================================
+
+_id
+orderNumber
+customerId
+items
+subtotal
+discount
+tax
+deliveryCharge
+grandTotal
+paymentMethod
+paymentStatus
+orderStatus
+deliveryAddress
+estimatedDeliveryTime
+createdAt
+updatedAt
+
+==================================================
+PAYMENTS COLLECTION
+==================================================
+
+_id
+orderId
+customerId
+paymentMethod
+transactionId
+amount
+status
+paidAt
+
+==================================================
+REVIEWS COLLECTION
+==================================================
+
+_id
+productId
+customerId
+rating
+review
+images
+createdAt
+
+==================================================
+WISHLIST COLLECTION
+==================================================
+
+_id
+customerId
+productIds
+createdAt
+
+==================================================
+CART COLLECTION
+==================================================
+
+_id
+customerId
+products
+subtotal
+tax
+deliveryCharge
+grandTotal
+updatedAt
+
+==================================================
+COUPONS COLLECTION
+==================================================
+
+couponCode
+discountType
+discountValue
+minimumOrder
+expiryDate
+usageLimit
+status
+
+==================================================
+OFFERS COLLECTION
+==================================================
+
+offerTitle
+offerDescription
+bannerImage
+discountPercentage
+startDate
+endDate
+status
+
+==================================================
+NOTIFICATIONS COLLECTION
+==================================================
+
+customerId
+title
+message
+type
+isRead
+createdAt
+
+==================================================
+RESTAURANT SETTINGS
+==================================================
+
+restaurantName
+logo
+email
+phone
+address
+openingTime
+closingTime
+deliveryCharge
+GST
+currency
+socialLinks
+
+==================================================
+CREATE
+==================================================
+
+✔ MongoDB Validation Schema
+
+✔ MongoDB Indexes
+
+✔ Sample Seed Data
+
+✔ JSON Import Files
+
+✔ MongoDB Compass Ready Collections
+
+✔ MongoDB Atlas Ready Database
+
+==================================================
+GENERATE
+==================================================
+
+1. Complete MongoDB Database Design
+
+2. Collection Relationship Diagram
+
+3. Sample JSON Documents
+
+4. MongoDB createCollection() Commands
+
+5. Validation Rules
+
+6. Index Creation Commands
+
+7. Sample Seed Data
+
+8. CRUD Query Examples
+
+9. Aggregation Examples
+
+10. Best Practices
+
+==================================================
+OUTPUT FORMAT
+==================================================
+
+Generate a production-ready MongoDB database that is ready to use with Flask and PyMongo. Every collection should include realistic sample documents, validation rules, indexes, and explanations. Follow industry standards used by experienced backend engineers.
