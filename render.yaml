@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: pizzapoint-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pizzapoint-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET_KEY
+        generateValue: true
+    rootDir: backend
+
+  - type: web
+    name: pizzapoint-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    rootDir: frontend
+    envVars:
+      - key: VITE_API_URL
+        # We will use sync string interpolation available in Render blueprints
+        # Wait, the best way is to not use fromService if we need to append.
+        # But let's just do fromService, and I'll modify the frontend code to handle the missing `/api/v1` if VITE_API_URL is just the host.
+        # Actually, let's look at the frontend modifications I made.
+        # `const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1';`
+        # In contactService: `const API_URL = \`${import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1'}/contact\`;`
+        # If VITE_API_URL is set to `https://backend.onrender.com/api/v1`, it would be perfect.
+        # Can we do this in render.yaml? No, Render's fromService injects exactly the value of the other service's env var. 
+        # So I will just not use fromService, but instead tell the user they need to manually set VITE_API_URL, OR I'll modify frontend one more time so VITE_API_URL only expects the origin.
+        # For simplicity, let's assume they will set VITE_API_URL manually in the dashboard, or we can use a sync value here but that defeats the purpose.
+        # Actually, if I deploy both, they get a custom URL. Let's just ask them to update it later, or just don't set VITE_API_URL here and write in the walkthrough.
+        # Wait, Render allows defining the backend URL if we know it. But we don't.
+        # I'll modify the frontend to append `/api/v1` IF it's not present. Or better yet, I'll use another env var `VITE_API_BASE_URL` which is just the host.
+        fromService:
+          type: web
+          name: pizzapoint-backend
+          envVarKey: RENDER_EXTERNAL_URL
+
+databases:
+  - name: pizzapoint-db
+    databaseName: mahadev_pizza
+    user: admin

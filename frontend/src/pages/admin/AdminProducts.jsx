@@ -105,14 +105,16 @@ const AdminProducts = () => {
 
       if (formData.id) {
         // Edit logic
-        await fetch(`http://localhost:5000/api/v1/products/${formData.id}`, {
+        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        await fetch(`${baseUrl}/api/v1/products/${formData.id}`, {
           method: 'PUT',
           headers: { 'Authorization': `Bearer ${token}` },
           body: payload
         });
       } else {
         // Add logic
-        await fetch(`http://localhost:5000/api/v1/products/`, {
+        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        await fetch(`${baseUrl}/api/v1/products/`, {
           method: 'POST',
           headers: { 'Authorization': `Bearer ${token}` },
           body: payload
@@ -130,7 +132,8 @@ const AdminProducts = () => {
     if(window.confirm("Are you sure you want to delete this product?")) {
       try {
         const token = localStorage.getItem('token');
-        await fetch(`http://localhost:5000/api/v1/products/${id}`, {
+        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        await fetch(`${baseUrl}/api/v1/products/${id}`, {
           method: 'DELETE',
           headers: { 'Authorization': `Bearer ${token}` }
         });
