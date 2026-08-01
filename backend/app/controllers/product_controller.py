@@ -26,8 +26,8 @@ def save_image(image_file):
         file_path = os.path.join(upload_folder, unique_filename)
         image_file.save(file_path)
         
-        # Return the public URL
-        return f"http://127.0.0.1:5000/static/uploads/{unique_filename}"
+        # Return the public URL using the dynamic host
+        return f"{request.host_url}static/uploads/{unique_filename}"
     return None
 
 @product_bp.route('/', methods=['GET'])
