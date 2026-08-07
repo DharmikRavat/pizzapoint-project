@@ -69,7 +69,7 @@ const AdminDashboard = () => {
         <StatCard title="Total Products" value={stats.totalProducts} icon={<FiBox size={24} />} color="bg-orange-50 text-orange-600" to="/admin/products" delay={0.2} />
         <StatCard title="Categories" value={stats.totalCategories} icon={<FiList size={24} />} color="bg-purple-50 text-purple-600" to="/admin/categories" delay={0.3} />
         <StatCard title="Total Orders" value={stats.totalOrders} icon={<FiShoppingCart size={24} />} color="bg-pink-50 text-pink-600" to="/admin/orders" delay={0.4} />
-        <StatCard title="Total Revenue" value={`$${stats.totalRevenue}`} icon={<FiDollarSign size={24} />} color="bg-green-50 text-green-600" to="/admin/orders" delay={0.5} />
+        <StatCard title="Total Revenue" value={`₹${stats.totalRevenue}`} icon={<FiDollarSign size={24} />} color="bg-green-50 text-green-600" to="/admin/orders" delay={0.5} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -106,7 +106,7 @@ const AdminDashboard = () => {
                       <td className="p-4 font-mono text-sm text-gray-600">#{order._id.substring(order._id.length - 6)}</td>
                       <td className="p-4 font-semibold text-dark">User {order.userId.substring(order.userId.length - 4)}</td>
                       <td className="p-4 text-sm text-gray-500 flex items-center gap-1"><FiClock size={14} /> {new Date(order.createdAt).toLocaleDateString()}</td>
-                      <td className="p-4 font-bold text-dark">${order.totalAmount}</td>
+                      <td className="p-4 font-bold text-dark">₹{order.totalAmount}</td>
                       <td className="p-4">
                         <span className={`px-3 py-1 rounded-full text-xs font-bold ${
                           order.status === 'Delivered' ? 'bg-green-100 text-green-700' : 

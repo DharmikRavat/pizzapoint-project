@@ -224,7 +224,7 @@ const Checkout = () => {
                 disabled={loading}
                 className={`w-full py-4 bg-primary text-white text-xl font-bold rounded-xl hover:bg-red-600 transition shadow-lg hover:shadow-xl mt-4 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                {loading ? 'Placing Order...' : `Place Order • $${finalTotal.toFixed(2)}`}
+                {loading ? 'Placing Order...' : `Place Order • ₹${finalTotal}`}
               </button>
             </form>
           </div>
@@ -241,7 +241,7 @@ const Checkout = () => {
                       <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded mr-2 font-medium">{item.quantity}x</span> 
                       {item.name}
                     </span>
-                    <span className="font-medium">${((item.discountPrice || item.price) * item.quantity).toFixed(2)}</span>
+                    <span className="font-medium">₹{((item.discountPrice || item.price) * item.quantity)}</span>
                   </div>
                 ))}
               </div>
@@ -284,13 +284,13 @@ const Checkout = () => {
               <div className="border-t border-gray-100 pt-4 text-gray-700">
                 <div className="flex justify-between mb-3 text-sm">
                   <span>Subtotal</span>
-                  <span className="font-medium">${subtotal.toFixed(2)}</span>
+                  <span className="font-medium">₹{subtotal}</span>
                 </div>
                 
                 {discount > 0 && (
                   <div className="flex justify-between mb-3 text-sm text-green-600 font-medium">
                     <span>Discount ({appliedPromo.code})</span>
-                    <span>-${discount.toFixed(2)}</span>
+                    <span>-₹{discount}</span>
                   </div>
                 )}
                 
@@ -299,13 +299,13 @@ const Checkout = () => {
                   {deliveryFee === 0 ? (
                     <span className="text-green-600 font-medium">Free</span>
                   ) : (
-                    <span className="font-medium">${deliveryFee.toFixed(2)}</span>
+                    <span className="font-medium">₹{deliveryFee}</span>
                   )}
                 </div>
                 
                 <div className="flex justify-between items-center font-bold text-xl pt-4 border-t border-gray-100 text-gray-800">
                   <span>Total</span>
-                  <span className="text-primary">${finalTotal.toFixed(2)}</span>
+                  <span className="text-primary">₹{finalTotal}</span>
                 </div>
               </div>
             </div>

@@ -178,7 +178,7 @@ const AdminProducts = () => {
                     <img src={p.image || "https://via.placeholder.com/50"} alt={p.name} className="w-12 h-12 object-cover rounded" />
                   </td>
                   <td className="p-4 font-semibold">{p.name}</td>
-                  <td className="p-4">${p.discountPrice || p.price}</td>
+                  <td className="p-4">₹{p.discountPrice || p.price}</td>
                   <td className="p-4">
                     <span className={`px-2 py-1 rounded text-xs ${p.isAvailable ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
                       {p.isAvailable ? 'Available' : 'Unavailable'}
@@ -205,7 +205,7 @@ const AdminProducts = () => {
                 <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="e.g. Cheese Pizza" />
               </div>
               <div className="mb-4">
-                <label className="block text-gray-700 mb-2 font-semibold">Price ($)</label>
+                <label className="block text-gray-700 mb-2 font-semibold">Price (₹)</label>
                 <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({...formData, price: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="10.99" />
               </div>
               <div className="mb-4">

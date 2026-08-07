@@ -126,11 +126,11 @@ const Menu = () => {
                   <div className="flex flex-col">
                     {product.discountPrice ? (
                       <>
-                        <span className="text-xl font-bold text-primary">${product.discountPrice}</span>
-                        <span className="text-sm text-gray-400 line-through">${product.price}</span>
+                        <span className="text-xl font-bold text-primary">₹{product.discountPrice}</span>
+                        <span className="text-sm text-gray-400 line-through">₹{product.price}</span>
                       </>
                     ) : (
-                      <span className="text-xl font-bold text-primary">${product.price}</span>
+                      <span className="text-xl font-bold text-primary">₹{product.price}</span>
                     )}
                   </div>
                   <motion.button 

@@ -96,8 +96,8 @@ def setup_database():
             "email": "hello@mahadevpizza.com",
             "phone": "+1 234 567 8900",
             "address": "123 Pizza Street, Food City",
-            "currency": "USD",
-            "deliveryCharge": 2.99,
+            "currency": "INR",
+            "deliveryCharge": 49,
             "GST": 5.0
         })
 
@@ -119,8 +119,8 @@ def setup_database():
                     "productName": "Margherita Extra",
                     "slug": "margherita-extra",
                     "description": "Classic delight with 100% real mozzarella cheese.",
-                    "price": 12.99,
-                    "discountPrice": 10.99,
+                    "price": 1078,
+                    "discountPrice": 912,
                     "isVeg": True,
                     "isAvailable": True,
                     "rating": 4.8,
@@ -133,8 +133,8 @@ def setup_database():
                     "productName": "Veggie Supreme",
                     "slug": "veggie-supreme",
                     "description": "Black olives, capsicum, onion, grilled mushroom, corn.",
-                    "price": 14.99,
-                    "discountPrice": 12.99,
+                    "price": 1244,
+                    "discountPrice": 1078,
                     "isVeg": True,
                     "isAvailable": True,
                     "rating": 4.7,

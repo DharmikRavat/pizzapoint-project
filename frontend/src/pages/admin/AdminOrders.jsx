@@ -88,7 +88,7 @@ const AdminOrders = () => {
                     <td className="p-4">
                       <span className="font-semibold text-gray-700 text-sm">{order.paymentMethod || 'COD'}</span>
                     </td>
-                    <td className="p-4 font-bold text-primary">${order.totalAmount.toFixed(2)}</td>
+                    <td className="p-4 font-bold text-primary">₹{order.totalAmount}</td>
                     <td className="p-4">
                       <select 
                         value={order.status}

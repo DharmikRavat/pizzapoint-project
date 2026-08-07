@@ -24,6 +24,7 @@ const featuredPizzas = [
     rating: 4.8,
     discount: '20% OFF',
     isVeg: true,
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500&auto=format&fit=crop',
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ const featuredPizzas = [
     rating: 4.9,
     discount: null,
     isVeg: false,
+    image: 'https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=500&auto=format&fit=crop',
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ const featuredPizzas = [
     rating: 4.7,
     discount: '15% OFF',
     isVeg: true,
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500&auto=format&fit=crop',
   },
 ];
 
@@ -215,8 +218,8 @@ const Home = () => {
                   </button>
                 </div>
 
-                <div className="aspect-square bg-gray-100 relative overflow-hidden flex items-center justify-center p-8">
-                   <div className="text-[8rem] transform group-hover:scale-125 group-hover:rotate-6 transition-all duration-500">🍕</div>
+                <div className="aspect-square bg-gray-100 relative overflow-hidden flex items-center justify-center">
+                   <img src={pizza.image} alt={pizza.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" />
                 </div>
 
                 <div className="p-6">
@@ -230,7 +233,7 @@ const Home = () => {
                   <p className="text-gray-500 text-sm mb-6 min-h-[40px]">{pizza.desc}</p>
                   
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-primary">${pizza.price}</span>
+                    <span className="text-2xl font-bold text-primary">₹{pizza.price}</span>
                     <button className="bg-dark hover:bg-primary text-white p-3 rounded-xl transition-colors shadow-md hover:shadow-primary/40 flex items-center space-x-2 transform active:scale-95">
                       <FiShoppingCart size={18} />
                       <span className="text-sm font-semibold">Add</span>

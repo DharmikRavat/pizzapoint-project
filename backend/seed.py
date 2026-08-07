@@ -17,8 +17,8 @@ def seed_database():
             contact_email="hello@mahadevpizza.com",
             contact_phone="+1 234 567 8900",
             address="123 Pizza Street, Food City",
-            currency="USD",
-            delivery_charge=2.99,
+            currency="INR",
+            delivery_charge=49,
             tax_percentage=5.0
         )
         db.session.add(settings)
@@ -61,8 +61,8 @@ def seed_database():
             name="Margherita Extra",
             slug="margherita-extra",
             description="Classic delight with 100% real mozzarella cheese.",
-            price=12.99,
-            discount_price=10.99,
+            price=1078,
+            discount_price=912,
             is_veg=True,
             is_available=True,
             image="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=500&auto=format&fit=crop"
@@ -73,8 +73,8 @@ def seed_database():
             name="Veggie Supreme",
             slug="veggie-supreme",
             description="Black olives, capsicum, onion, grilled mushroom, corn.",
-            price=14.99,
-            discount_price=12.99,
+            price=1244,
+            discount_price=1078,
             is_veg=True,
             is_available=True,
             image="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500&auto=format&fit=crop"

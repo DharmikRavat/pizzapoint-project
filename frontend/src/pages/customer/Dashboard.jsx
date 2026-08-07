@@ -185,7 +185,7 @@ const Dashboard = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500 font-medium">Total Spent</p>
-                      <h3 className="text-2xl font-bold text-gray-800">${totalSpent.toFixed(2)}</h3>
+                      <h3 className="text-2xl font-bold text-gray-800">₹{totalSpent}</h3>
                     </div>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ const Dashboard = () => {
                   <h3 className="text-xl font-bold mb-4">Recent Activity</h3>
                   {orders.length > 0 ? (
                     <div className="text-gray-600">
-                      Your last order was placed on {new Date(orders[0].createdAt).toLocaleDateString()} for ${orders[0].totalAmount.toFixed(2)}.
+                      Your last order was placed on {new Date(orders[0].createdAt).toLocaleDateString()} for ${orders[0].totalAmount}.
                       <button onClick={() => setActiveTab('orders')} className="text-primary font-medium ml-2 hover:underline">View all orders</button>
                     </div>
                   ) : (
@@ -228,7 +228,7 @@ const Dashboard = () => {
                             <p className="text-sm text-gray-500">{new Date(order.createdAt).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
                           </div>
                           <div className="text-left sm:text-right mt-2 sm:mt-0">
-                            <p className="font-bold text-xl text-primary">${order.totalAmount.toFixed(2)}</p>
+                            <p className="font-bold text-xl text-primary">₹{order.totalAmount}</p>
                             <span className={`inline-block mt-1 text-xs px-3 py-1 rounded-full font-medium ${
                               order.status === 'Pending' ? 'bg-yellow-100 text-yellow-800' :
                               order.status === 'Delivered' ? 'bg-green-100 text-green-800' :
@@ -247,7 +247,7 @@ const Dashboard = () => {
                                 <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-md">{item.quantity}x</span>
                                 <span>{item.productName}</span>
                               </span>
-                              <span className="font-medium">${(item.price * item.quantity).toFixed(2)}</span>
+                              <span className="font-medium">₹{(item.price * item.quantity)}</span>
                             </div>
                           ))}
                         </div>
