@@ -27,6 +27,7 @@ const Menu = () => {
   const [loading, setLoading] = useState(true);
   const { addToCart } = useCart();
   const navigate = useNavigate();
+  const [activeCategory, setActiveCategory] = useState('All');
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -81,9 +82,16 @@ const Menu = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
-          <button className="px-6 py-2 bg-primary text-white rounded-full font-semibold shadow-md transform hover:scale-105 transition-transform">All</button>
+          <button 
+            onClick={() => setActiveCategory('All')}
+            className={`px-6 py-2 rounded-full font-semibold shadow-sm border transition-all transform hover:scale-105 ${activeCategory === 'All' ? 'bg-primary text-white border-primary shadow-md' : 'bg-white text-gray-700 hover:bg-red-50 hover:text-primary border-gray-200'}`}>
+            All
+          </button>
           {categories.map((cat) => (
-            <button key={cat._id} className="px-6 py-2 bg-white text-gray-700 hover:bg-red-50 hover:text-primary rounded-full font-semibold shadow-sm border border-gray-200 transition-all transform hover:scale-105">
+            <button 
+              key={cat._id} 
+              onClick={() => setActiveCategory(cat._id)}
+              className={`px-6 py-2 rounded-full font-semibold shadow-sm border transition-all transform hover:scale-105 ${activeCategory === cat._id ? 'bg-primary text-white border-primary shadow-md' : 'bg-white text-gray-700 hover:bg-red-50 hover:text-primary border-gray-200'}`}>
               {cat.name}
             </button>
           ))}
@@ -96,7 +104,7 @@ const Menu = () => {
           animate="show"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
         >
-          {products.map((product) => (
+          {(activeCategory === 'All' ? products : products.filter(p => p.categoryId === activeCategory)).map((product) => (
             <motion.div 
               variants={itemVariants}
               whileHover={{ y: -10, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
