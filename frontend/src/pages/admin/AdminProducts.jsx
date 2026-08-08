@@ -90,7 +90,9 @@ const AdminProducts = () => {
 
   const autoImageUrl = getAutoImage(formData.name);
   const existingImage = formData.id ? products.find(p => p._id === formData.id)?.image : null;
-  const displayImage = formData.image ? URL.createObjectURL(formData.image) : (existingImage || autoImageUrl || "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=500&auto=format&fit=crop");
+  const displayImage = (formData.image && typeof formData.image !== 'string') 
+    ? URL.createObjectURL(formData.image) 
+    : (typeof formData.image === 'string' ? formData.image : (existingImage || autoImageUrl || "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=500&auto=format&fit=crop"));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -100,8 +102,10 @@ const AdminProducts = () => {
       const payload = new FormData();
       payload.append('name', formData.name);
       payload.append('price', formData.price);
+      if (formData.discountPrice) payload.append('discountPrice', formData.discountPrice);
       payload.append('categoryId', formData.categoryId);
       payload.append('isAvailable', formData.isAvailable);
+      payload.append('isVeg', formData.isVeg !== undefined ? formData.isVeg : true);
       payload.append('description', formData.description);
       if (formData.image) {
         payload.append('image', formData.image);
@@ -219,6 +223,10 @@ const AdminProducts = () => {
                 <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({...formData, price: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="499.00" />
               </div>
               <div className="mb-4">
+                <label className="block text-gray-700 mb-2 font-semibold">Discount Price (₹)</label>
+                <input type="number" step="0.01" value={formData.discountPrice || ''} onChange={e => setFormData({...formData, discountPrice: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="399.00 (Optional)" />
+              </div>
+              <div className="mb-4">
                 <label className="block text-gray-700 mb-2 font-semibold">Category</label>
                 <select value={formData.categoryId} onChange={e => setFormData({...formData, categoryId: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none">
                   {categories.map(cat => (
@@ -230,9 +238,15 @@ const AdminProducts = () => {
                 <label className="block text-gray-700 mb-2 font-semibold">Description</label>
                 <textarea rows="3" value={formData.description} onChange={e => setFormData({...formData, description: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="Product description..."></textarea>
               </div>
-              <div className="mb-6 flex items-center border-b pb-4">
-                <input type="checkbox" id="isAvailable" checked={formData.isAvailable} onChange={e => setFormData({...formData, isAvailable: e.target.checked})} className="mr-2" />
-                <label htmlFor="isAvailable" className="text-gray-700 font-semibold">Is Available</label>
+              <div className="mb-6 flex items-center border-b pb-4 space-x-6">
+                <div className="flex items-center">
+                  <input type="checkbox" id="isAvailable" checked={formData.isAvailable} onChange={e => setFormData({...formData, isAvailable: e.target.checked})} className="mr-2" />
+                  <label htmlFor="isAvailable" className="text-gray-700 font-semibold">Is Available</label>
+                </div>
+                <div className="flex items-center">
+                  <input type="checkbox" id="isVeg" checked={formData.isVeg} onChange={e => setFormData({...formData, isVeg: e.target.checked})} className="mr-2" />
+                  <label htmlFor="isVeg" className="text-gray-700 font-semibold text-green-700">Is Vegetarian</label>
+                </div>
               </div>
               
               <div className="mb-6 flex flex-col items-center">
