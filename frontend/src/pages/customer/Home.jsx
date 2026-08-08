@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getProducts } from '../../services/productService';
+import { useCart } from '../../context/CartContext';
 import Layout from '../../components/layout/Layout';
 import { motion } from 'framer-motion';
 import { FiClock, FiStar, FiPercent, FiHeart, FiEye, FiShoppingCart } from 'react-icons/fi';
@@ -65,6 +67,27 @@ const itemVariants = {
 };
 
 const Home = () => {
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+  const { addToCart } = useCart();
+
+  useEffect(() => {
+    const fetchFeatured = async () => {
+      try {
+        const prods = await getProducts();
+        // Just take the first 3 products to feature on the homepage
+        setFeaturedProducts(prods.slice(0, 3));
+      } catch (error) {
+        console.error("Failed to load featured products", error);
+      }
+    };
+    fetchFeatured();
+  }, []);
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    alert(`${product.name} added to cart!`);
+  };
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -189,9 +212,14 @@ const Home = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {featuredPizzas.map((pizza, idx) => (
+            {featuredProducts.map((pizza, idx) => {
+              const discountStr = pizza.discountPrice && pizza.price 
+                ? `${Math.round(((pizza.price - pizza.discountPrice) / pizza.price) * 100)}% OFF` 
+                : null;
+                
+              return (
               <motion.div
-                key={pizza.id}
+                key={pizza._id}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -202,9 +230,9 @@ const Home = () => {
                 {/* Badges */}
                 <div className="absolute top-4 left-4 z-10 flex space-x-2">
                   <span className={`w-3 h-3 rounded-full border-2 ${pizza.isVeg ? 'border-success bg-success/20' : 'border-primary bg-primary/20'}`}></span>
-                  {pizza.discount && (
+                  {discountStr && (
                     <span className="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md">
-                      {pizza.discount}
+                      {discountStr}
                     </span>
                   )}
                 </div>
@@ -219,29 +247,45 @@ const Home = () => {
                 </div>
 
                 <div className="aspect-square bg-gray-100 relative overflow-hidden flex items-center justify-center">
-                   <img src={pizza.image} alt={pizza.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" />
+                   {pizza.image ? (
+                     <img src={pizza.image} alt={pizza.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" />
+                   ) : (
+                     <span className="text-[5rem] transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">🍕</span>
+                   )}
                 </div>
 
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-heading font-bold text-xl text-dark">{pizza.name}</h3>
+                    <h3 className="font-heading font-bold text-xl text-dark line-clamp-1">{pizza.name}</h3>
                     <div className="flex items-center space-x-1 text-secondary">
                       <FiStar className="fill-current" size={14} />
-                      <span className="text-sm font-bold text-dark">{pizza.rating}</span>
+                      <span className="text-sm font-bold text-dark">4.8</span>
                     </div>
                   </div>
-                  <p className="text-gray-500 text-sm mb-6 min-h-[40px]">{pizza.desc}</p>
+                  <p className="text-gray-500 text-sm mb-6 min-h-[40px] line-clamp-2">{pizza.description}</p>
                   
-                  <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-primary">₹{pizza.price}</span>
-                    <button className="bg-dark hover:bg-primary text-white p-3 rounded-xl transition-colors shadow-md hover:shadow-primary/40 flex items-center space-x-2 transform active:scale-95">
+                  <div className="flex justify-between items-center mt-auto">
+                    <div className="flex flex-col">
+                      {pizza.discountPrice ? (
+                        <>
+                          <span className="text-2xl font-bold text-primary">₹{pizza.discountPrice}</span>
+                          <span className="text-sm text-gray-400 line-through">₹{pizza.price}</span>
+                        </>
+                      ) : (
+                        <span className="text-2xl font-bold text-primary">₹{pizza.price}</span>
+                      )}
+                    </div>
+                    <button 
+                      onClick={() => handleAddToCart(pizza)}
+                      className="bg-dark hover:bg-primary text-white p-3 rounded-xl transition-colors shadow-md hover:shadow-primary/40 flex items-center space-x-2 transform active:scale-95"
+                    >
                       <FiShoppingCart size={18} />
                       <span className="text-sm font-semibold">Add</span>
                     </button>
                   </div>
                 </div>
               </motion.div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
