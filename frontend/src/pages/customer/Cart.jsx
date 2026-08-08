@@ -29,7 +29,7 @@ const Cart = () => {
                     <img src={item.image || "https://via.placeholder.com/100"} alt={item.name} className="w-20 h-20 object-cover rounded" />
                     <div>
                       <h3 className="font-bold text-lg">{item.name}</h3>
-                      <p className="text-gray-500">${(item.discountPrice || item.price).toFixed(2)}</p>
+                      <p className="text-gray-500">₹{(item.discountPrice || item.price).toFixed(2)}</p>
                     </div>
                   </div>
                   
@@ -49,15 +49,15 @@ const Cart = () => {
               <h2 className="text-2xl font-bold mb-6 border-b pb-4">Order Summary</h2>
               <div className="flex justify-between mb-4">
                 <span className="text-gray-600">Subtotal</span>
-                <span className="font-bold">${cartTotal.toFixed(2)}</span>
+                <span className="font-bold">₹{cartTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between mb-4 border-b pb-4">
                 <span className="text-gray-600">Delivery</span>
-                <span className="font-bold">$2.99</span>
+                <span className="font-bold">₹49.00</span>
               </div>
               <div className="flex justify-between mb-8 text-xl">
                 <span className="font-bold">Total</span>
-                <span className="font-bold text-primary">${(cartTotal + 2.99).toFixed(2)}</span>
+                <span className="font-bold text-primary">₹{(cartTotal + 49).toFixed(2)}</span>
               </div>
               <Link to="/checkout" className="btn-primary block text-center w-full">Proceed to Checkout</Link>
             </div>

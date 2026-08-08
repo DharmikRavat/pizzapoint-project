@@ -194,7 +194,7 @@ const Dashboard = () => {
                   <h3 className="text-xl font-bold mb-4">Recent Activity</h3>
                   {orders.length > 0 ? (
                     <div className="text-gray-600">
-                      Your last order was placed on {new Date(orders[0].createdAt).toLocaleDateString()} for ${orders[0].totalAmount}.
+                      Your last order was placed on {new Date(orders[0].createdAt).toLocaleDateString()} for ₹{orders[0].totalAmount}.
                       <button onClick={() => setActiveTab('orders')} className="text-primary font-medium ml-2 hover:underline">View all orders</button>
                     </div>
                   ) : (
