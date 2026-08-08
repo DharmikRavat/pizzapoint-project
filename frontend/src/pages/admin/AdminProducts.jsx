@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import AdminLayout from './AdminLayout';
 import { getProducts } from '../../services/productService';
+import { getCategories } from '../../services/categoryService';
 
 const AdminProducts = () => {
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ id: null, name: '', price: '', categoryId: 1, isAvailable: true, description: '', image: null });
 
-  const fetchProds = async () => {
+  const fetchData = async () => {
     try {
       const data = await getProducts();
       setProducts(data);
+      const catsData = await getCategories(true);
+      setCategories(catsData);
     } catch (err) {
       console.error(err);
     } finally {
@@ -20,20 +24,22 @@ const AdminProducts = () => {
   };
 
   useEffect(() => {
-    fetchProds();
+    fetchData();
   }, []);
 
   const openAddModal = () => {
-    setFormData({ id: null, name: '', price: '', categoryId: 1, isAvailable: true, description: '', image: null });
+    const defaultCategoryId = categories.length > 0 ? categories[0]._id : 1;
+    setFormData({ id: null, name: '', price: '', categoryId: defaultCategoryId, isAvailable: true, description: '', image: null });
     setShowModal(true);
   };
 
   const openEditModal = (product) => {
+    const defaultCategoryId = categories.length > 0 ? categories[0]._id : 1;
     setFormData({ 
       id: product._id, 
       name: product.name, 
       price: product.price, 
-      categoryId: product.categoryId || 1, 
+      categoryId: product.categoryId || defaultCategoryId, 
       isAvailable: product.isAvailable,
       description: product.description || '',
       image: null // We only store new images here
@@ -122,7 +128,7 @@ const AdminProducts = () => {
       }
       
       setShowModal(false);
-      fetchProds();
+      fetchData();
     } catch (e) {
       alert("Failed to save product");
     }
@@ -166,6 +172,7 @@ const AdminProducts = () => {
               <tr className="bg-gray-100 text-gray-700">
                 <th className="p-4 border-b">Image</th>
                 <th className="p-4 border-b">Name</th>
+                <th className="p-4 border-b">Category</th>
                 <th className="p-4 border-b">Price</th>
                 <th className="p-4 border-b">Status</th>
                 <th className="p-4 border-b text-center">Actions</th>
@@ -178,6 +185,9 @@ const AdminProducts = () => {
                     <img src={p.image || "https://via.placeholder.com/50"} alt={p.name} className="w-12 h-12 object-cover rounded" />
                   </td>
                   <td className="p-4 font-semibold">{p.name}</td>
+                  <td className="p-4 text-gray-600">
+                    {categories.find(c => String(c._id) === String(p.categoryId))?.name || 'Unknown'}
+                  </td>
                   <td className="p-4">₹{p.discountPrice || p.price}</td>
                   <td className="p-4">
                     <span className={`px-2 py-1 rounded text-xs ${p.isAvailable ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
@@ -206,7 +216,15 @@ const AdminProducts = () => {
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700 mb-2 font-semibold">Price (₹)</label>
-                <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({...formData, price: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="10.99" />
+                <input type="number" step="0.01" required value={formData.price} onChange={e => setFormData({...formData, price: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none" placeholder="499.00" />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2 font-semibold">Category</label>
+                <select value={formData.categoryId} onChange={e => setFormData({...formData, categoryId: e.target.value})} className="w-full border p-2 rounded focus:ring focus:ring-primary focus:outline-none">
+                  {categories.map(cat => (
+                    <option key={cat._id} value={cat._id}>{cat.name}</option>
+                  ))}
+                </select>
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700 mb-2 font-semibold">Description</label>

@@ -59,7 +59,7 @@ const Checkout = () => {
 
   // Calculate Finals
   let subtotal = cartTotal;
-  let deliveryFee = 2.99;
+  let deliveryFee = 49;
   let discount = 0;
 
   if (appliedPromo) {

@@ -20,7 +20,7 @@ const featuredPizzas = [
     id: 1,
     name: 'Margherita Extra',
     desc: 'Classic delight with 100% real mozzarella cheese.',
-    price: 12.99,
+    price: 1078,
     rating: 4.8,
     discount: '20% OFF',
     isVeg: true,
@@ -30,7 +30,7 @@ const featuredPizzas = [
     id: 2,
     name: 'Pepperoni Paradise',
     desc: 'Loaded with pepperoni and extra cheese.',
-    price: 15.99,
+    price: 1327,
     rating: 4.9,
     discount: null,
     isVeg: false,
@@ -40,7 +40,7 @@ const featuredPizzas = [
     id: 3,
     name: 'Veggie Supreme',
     desc: 'Black olives, capsicum, onion, grilled mushroom, corn, jalapeño.',
-    price: 14.99,
+    price: 1244,
     rating: 4.7,
     discount: '15% OFF',
     isVeg: true,
@@ -118,7 +118,7 @@ const Home = () => {
                 className="relative z-10 w-full max-w-lg mx-auto"
               >
                 <div className="w-full aspect-square bg-gradient-to-tr from-secondary/40 to-primary/40 rounded-full shadow-2xl flex items-center justify-center border-8 border-white/50 backdrop-blur-sm relative overflow-hidden">
-                   <div className="text-[12rem] md:text-[18rem] animate-spin-slow origin-center">🍕</div>
+                   <img src="/hero-pizza.png" alt="Delicious Pizza" className="w-[85%] h-[85%] object-contain animate-spin-slow origin-center drop-shadow-2xl" />
                 </div>
 
                 <motion.div 
