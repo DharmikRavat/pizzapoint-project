@@ -23,6 +23,10 @@ def create_app(config_class=Config):
     app.register_blueprint(offer_bp, url_prefix='/api/v1/offers')
     app.register_blueprint(content_bp, url_prefix='/api/v1/content')
 
+    @app.route('/')
+    def index():
+        return {'status': 'success', 'message': 'Welcome to Mahadev Pizza Point API!'}, 200
+
     @app.route('/health')
     def health_check():
         return {'status': 'healthy', 'message': 'Mahadev Pizza Point API is running!'}, 200

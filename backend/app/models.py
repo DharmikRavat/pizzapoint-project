@@ -1,7 +1,11 @@
 from app.extensions import db
 from datetime import datetime
 
+from typing import Any
+
 class User(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
     full_name = db.Column(db.String(100), nullable=False)
@@ -26,6 +30,8 @@ class User(db.Model):
         }
 
 class Category(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'categories'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
@@ -46,6 +52,8 @@ class Category(db.Model):
         }
 
 class Product(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'products'
     id = db.Column(db.Integer, primary_key=True)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'), nullable=False)
@@ -73,6 +81,8 @@ class Product(db.Model):
         }
 
 class Settings(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'settings'
     id = db.Column(db.Integer, primary_key=True)
     restaurant_name = db.Column(db.String(100), nullable=False)
@@ -98,6 +108,8 @@ class Settings(db.Model):
         }
 
 class Order(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'orders'
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
@@ -125,6 +137,8 @@ class Order(db.Model):
         }
 
 class OrderItem(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'order_items'
     id = db.Column(db.Integer, primary_key=True)
     order_id = db.Column(db.Integer, db.ForeignKey('orders.id'), nullable=False)
@@ -144,6 +158,8 @@ class OrderItem(db.Model):
         }
 
 class ContactMessage(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'contact_messages'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
@@ -165,6 +181,8 @@ class ContactMessage(db.Model):
         }
 
 class Offer(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'offers'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
@@ -188,6 +206,8 @@ class Offer(db.Model):
         }
 
 class AboutContent(db.Model):
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
     __tablename__ = 'about_content'
     id = db.Column(db.Integer, primary_key=True)
     section = db.Column(db.String(50), nullable=False, unique=True) # e.g. 'main', 'mission', 'features'
