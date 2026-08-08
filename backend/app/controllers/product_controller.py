@@ -63,12 +63,14 @@ def add_product():
             image_url = save_image(request.files['image'])
         
         new_prod = Product(
-            category_id=data.get('categoryId', 1),
+            category_id=int(data.get('categoryId', 1)),
             name=data.get('name'),
             slug=data.get('name', '').lower().replace(' ', '-'),
             description=data.get('description', ''),
             price=float(data.get('price', 0)),
+            discount_price=float(data.get('discountPrice')) if data.get('discountPrice') else None,
             is_available=data.get('isAvailable') == 'true',
+            is_veg=data.get('isVeg') == 'true',
             image=image_url
         )
         db.session.add(new_prod)
@@ -102,8 +104,11 @@ def edit_product(id):
         prod.name = data.get('name', prod.name)
         prod.slug = prod.name.lower().replace(' ', '-')
         prod.description = data.get('description', prod.description)
+        prod.category_id = int(data.get('categoryId', prod.category_id))
         prod.price = float(data.get('price', prod.price))
+        prod.discount_price = float(data.get('discountPrice')) if data.get('discountPrice') else None
         prod.is_available = data.get('isAvailable') == 'true'
+        prod.is_veg = data.get('isVeg') == 'true'
         
         db.session.commit()
         return jsonify({'status': 'success', 'data': prod.to_dict()}), 200
