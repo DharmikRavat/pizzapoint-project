@@ -1,24 +1,24 @@
-import { useEffect } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
-import Home from './pages/customer/Home';
-import Menu from './pages/customer/Menu';
-import Offers from './pages/customer/Offers';
-import About from './pages/customer/About';
-import Contact from './pages/customer/Contact';
-import Cart from './pages/customer/Cart';
-import Checkout from './pages/customer/Checkout';
-import Dashboard from './pages/customer/Dashboard';
-import Login from './pages/auth/Login';
-import Register from './pages/auth/Register';
-import AdminDashboard from './pages/admin/AdminDashboard';
-import AdminProducts from './pages/admin/AdminProducts';
-import AdminCategories from './pages/admin/AdminCategories';
-import AdminCustomers from './pages/admin/AdminCustomers';
-import AdminOrders from './pages/admin/AdminOrders';
-import AdminContacts from './pages/admin/AdminContacts';
-import AdminOffers from './pages/admin/AdminOffers';
-import AdminAbout from './pages/admin/AdminAbout';
+const Home = lazy(() => import('./pages/customer/Home'));
+const Menu = lazy(() => import('./pages/customer/Menu'));
+const Offers = lazy(() => import('./pages/customer/Offers'));
+const About = lazy(() => import('./pages/customer/About'));
+const Contact = lazy(() => import('./pages/customer/Contact'));
+const Cart = lazy(() => import('./pages/customer/Cart'));
+const Checkout = lazy(() => import('./pages/customer/Checkout'));
+const Dashboard = lazy(() => import('./pages/customer/Dashboard'));
+const Login = lazy(() => import('./pages/auth/Login'));
+const Register = lazy(() => import('./pages/auth/Register'));
+const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'));
+const AdminProducts = lazy(() => import('./pages/admin/AdminProducts'));
+const AdminCategories = lazy(() => import('./pages/admin/AdminCategories'));
+const AdminCustomers = lazy(() => import('./pages/admin/AdminCustomers'));
+const AdminOrders = lazy(() => import('./pages/admin/AdminOrders'));
+const AdminContacts = lazy(() => import('./pages/admin/AdminContacts'));
+const AdminOffers = lazy(() => import('./pages/admin/AdminOffers'));
+const AdminAbout = lazy(() => import('./pages/admin/AdminAbout'));
 
 function App() {
   useEffect(() => {
@@ -35,7 +35,8 @@ function App() {
 
   return (
     <ErrorBoundary>
-      <Routes>
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-16 h-16 border-4 border-red-500 border-t-transparent rounded-full animate-spin"></div></div>}>
+        <Routes>
         {/* Customer Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -63,7 +64,8 @@ function App() {
         
         {/* Fallback Route */}
         <Route path="*" element={<div className="min-h-screen flex items-center justify-center text-3xl font-bold">404 - Page Not Found</div>} />
-      </Routes>
+        </Routes>
+      </Suspense>
     </ErrorBoundary>
   );
 }

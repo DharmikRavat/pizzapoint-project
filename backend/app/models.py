@@ -6,6 +6,7 @@ from typing import Any
 class User(db.Model):
     def __init__(self, **kwargs: Any) -> None:
         super().__init__(**kwargs)
+
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
     full_name = db.Column(db.String(100), nullable=False)
