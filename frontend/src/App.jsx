@@ -1,6 +1,8 @@
 import { useEffect, Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
+import ProtectedRoute from './components/ProtectedRoute';
+
 const Home = lazy(() => import('./pages/customer/Home'));
 const Menu = lazy(() => import('./pages/customer/Menu'));
 const Offers = lazy(() => import('./pages/customer/Offers'));
@@ -9,8 +11,11 @@ const Contact = lazy(() => import('./pages/customer/Contact'));
 const Cart = lazy(() => import('./pages/customer/Cart'));
 const Checkout = lazy(() => import('./pages/customer/Checkout'));
 const Dashboard = lazy(() => import('./pages/customer/Dashboard'));
+
 const Login = lazy(() => import('./pages/auth/Login'));
 const Register = lazy(() => import('./pages/auth/Register'));
+const AdminLogin = lazy(() => import('./pages/auth/AdminLogin'));
+
 const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'));
 const AdminProducts = lazy(() => import('./pages/admin/AdminProducts'));
 const AdminCategories = lazy(() => import('./pages/admin/AdminCategories'));
@@ -37,33 +42,39 @@ function App() {
     <ErrorBoundary>
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-16 h-16 border-4 border-red-500 border-t-transparent rounded-full animate-spin"></div></div>}>
         <Routes>
-        {/* Customer Routes */}
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/offers" element={<Offers />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        
-        {/* Auth Routes */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/admin/login" element={<Login />} />
-        
-        {/* Admin Routes */}
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/admin/products" element={<AdminProducts />} />
-        <Route path="/admin/categories" element={<AdminCategories />} />
-        <Route path="/admin/customers" element={<AdminCustomers />} />
-        <Route path="/admin/orders" element={<AdminOrders />} />
-        <Route path="/admin/contacts" element={<AdminContacts />} />
-        <Route path="/admin/offers" element={<AdminOffers />} />
-        <Route path="/admin/about" element={<AdminAbout />} />
-        
-        {/* Fallback Route */}
-        <Route path="*" element={<div className="min-h-screen flex items-center justify-center text-3xl font-bold">404 - Page Not Found</div>} />
+          {/* Public Customer Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          
+          {/* Protected Customer Routes */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
+          
+          {/* Auth Routes */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          
+          {/* Protected Admin Routes */}
+          <Route element={<ProtectedRoute requireAdmin={true} />}>
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/products" element={<AdminProducts />} />
+            <Route path="/admin/categories" element={<AdminCategories />} />
+            <Route path="/admin/customers" element={<AdminCustomers />} />
+            <Route path="/admin/orders" element={<AdminOrders />} />
+            <Route path="/admin/contacts" element={<AdminContacts />} />
+            <Route path="/admin/offers" element={<AdminOffers />} />
+            <Route path="/admin/about" element={<AdminAbout />} />
+          </Route>
+          
+          {/* Fallback Route */}
+          <Route path="*" element={<div className="min-h-screen flex items-center justify-center text-3xl font-bold">404 - Page Not Found</div>} />
         </Routes>
       </Suspense>
     </ErrorBoundary>

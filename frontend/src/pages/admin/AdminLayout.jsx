@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { MdDashboard, MdLocalPizza, MdCategory, MdListAlt, MdPeople, MdLocalOffer, MdInfo, MdContactMail, MdArrowBack } from 'react-icons/md';
 
 const AdminLayout = ({ children }) => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/admin', label: 'Dashboard', icon: '📊' },
-    { path: '/admin/products', label: 'Products', icon: '🍕' },
-    { path: '/admin/categories', label: 'Categories', icon: '📁' },
-    { path: '/admin/orders', label: 'Orders', icon: '📦' },
-    { path: '/admin/customers', label: 'Customers', icon: '👥' },
-    { path: '/admin/offers', label: 'Offers', icon: '🏷️' },
-    { path: '/admin/about', label: 'About', icon: '📝' },
-    { path: '/admin/contacts', label: 'Contacts', icon: '📩' },
+    { path: '/admin', label: 'Dashboard', icon: <MdDashboard /> },
+    { path: '/admin/products', label: 'Products', icon: <MdLocalPizza /> },
+    { path: '/admin/categories', label: 'Categories', icon: <MdCategory /> },
+    { path: '/admin/orders', label: 'Orders', icon: <MdListAlt /> },
+    { path: '/admin/customers', label: 'Customers', icon: <MdPeople /> },
+    { path: '/admin/offers', label: 'Offers', icon: <MdLocalOffer /> },
+    { path: '/admin/about', label: 'About', icon: <MdInfo /> },
+    { path: '/admin/contacts', label: 'Contacts', icon: <MdContactMail /> },
   ];
 
   return (
@@ -44,7 +45,7 @@ const AdminLayout = ({ children }) => {
         
         <div className="p-4 border-t border-gray-800">
           <Link to="/" className="flex items-center px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors">
-            ⬅️ Back to Store
+            <MdArrowBack className="mr-2" /> Back to Store
           </Link>
         </div>
       </aside>
